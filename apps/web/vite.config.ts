@@ -15,5 +15,9 @@ export default defineConfig({
     fs: {
       allow: [".."],
     },
+    watch: {
+      usePolling: true,
+      interval: 100,
+    },
   },
 });

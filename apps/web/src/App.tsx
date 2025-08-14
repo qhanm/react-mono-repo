@@ -1,22 +1,15 @@
-import { Button } from "@ui";
+import { MainLayout } from "@ui";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Hello Monorepo with Vite</h1>
-      <Button
-        variant="primary"
-        onClick={() => alert("Primary button clicked!")}
-      >
-        Primary
-      </Button>
-      <Button
-        variant="secondary"
-        onClick={() => alert("Secondary button clicked!")}
-      >
-        Secondary
-      </Button>
-    </div>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route>
+          <Route path="/test" element={<>test 3</>} />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 

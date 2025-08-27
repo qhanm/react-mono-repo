@@ -1,4 +1,14 @@
+
+@use "./variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+
+  font-size: 16px;
 }

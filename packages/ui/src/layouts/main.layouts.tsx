@@ -1,6 +1,7 @@
 import Footer from "@ui/components/layout/footer";
 import Header from "@ui/components/layout/header";
 import { Outlet } from "react-router-dom";
+import "../styles/_theme.scss";
 
 export const MainLayout = () => {
   return (
